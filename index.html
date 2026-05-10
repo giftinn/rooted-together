@@ -285,7 +285,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Masih denganmu, Jantungku</h1>
+<h1>1st Mensiversary of Us</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -339,7 +339,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '0905';
+const correctPin = '1304';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -387,9 +387,9 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"Kapan pertama kali kita bertemu?", options:["December","February","May"],correct:0},
+{q:"Kapan kita officially pacaran", options:["29 December","1 Februari","13 April"],correct:2},
 {q:"Apa hal kecil yang menurutmu mereprentasikan 'kita'?", options:["Lucu","Manis","Hangat", "All of them"],correct:3},
-{q:"Siapa yang memiliki tangki cinta yang lebih banyak?", options:["Aku","Kita ","Kamu"],correct:1}
+{q:"Who loves the most?", options:["ME","You","Kita"],correct:2}
 ];
 
 let currentQ = 0;
@@ -428,7 +428,7 @@ function checkAnswer(i,btn){
         scoreEl.textContent = score;
 
         btn.classList.add("correctAnim");
-        feedback.textContent = "Correct🤍";
+        feedback.textContent = "Correct!";
 
         setTimeout(()=>{
             currentQ++;
@@ -454,7 +454,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2025-05-09T00:00:00");
+    const start = new Date("2026-04-13T00:00:00");
 
     setInterval(()=>{
 
@@ -487,11 +487,15 @@ function revealMemory(el){
         style="width:100%;height:100%;object-fit:cover;border-radius:18px">
     `;
 
-    const text = `
-      Hallo kanyaahku, mungkin kamu bosan mendengarkanku berkata "aku tidak menyangka" tapi sungguh, aku tidak menyangka kita sudah sampai di bulan ini, dari obrolan-obrolan kecil yang awalnya biasa saja, sampai sekarang menjadi bagian dari hal yang selalu aku tunggu, atau mungkin kamu tunggu juga. Dua bulan mungkin terdengar sebentar bagi banyak orang, tapi buat aku, ini sudah cukup untuk membuatku sadar kalau kehadiranmu membawa banyak hal baik, kalau dipikir-pikir lucu rasanya, bagaimana dua orang yang dipisahkan jarak bisa tetap merasa dekat setiap harinya, dan meski kita tidak selalu ada di tempat yang sama, aku suka cara kita tetap menemukan rumah di satu sama lain.
+    const text = `Happy 1st mensiversary, my favorite person.
+    a month with you feels like a quiet little miracle i get to hold in my hands. i still get that same warm feeling when i see your name pop up, the same soft smile when i think about us.
 
-    Terima kasih ya, sudah memilih tinggal, sudah sabar dengan segala kurangku, dan sudah membuat jarak terasa tidak terlalu menakutkan untuk dijalani, walau hanya lewat layar, lewat obrolan konyol, atau hal-hal kecil lainnya, aku rasa kita berhasil membuat hubungan ini selalu terasa hangat. Aku tidak tahu sejauh apa kita akan bersama, tapi untuk hari ini, aku merasa bersyukur karena masih denganmu, dan di antara banyak hal yang datang dan pergi, kita masih memilih untuk tetap di sini. Selamat untuk yang ke 2, Jantungku 🫀
-      `;
+    thank you for being my safe place, my comfort, my happiness in human form. thank you for the laughs, the random talks, the deep conversations at the worst hours, and even the tiny arguments that somehow make us stronger after.
+
+    i’m so grateful we found each other in this big, messy world. and out of everyone, we chose each other. that means something to me. it means everything.
+
+    here’s to another month of holding hands through everything, of growing, of loving louder and softer at the same time. i love us and i love you, more than yesterday, less than tomorrow.
+     `;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
 
